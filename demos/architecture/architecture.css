@@ -98,6 +98,30 @@ header .elements-social ul li a {
     line-height: 1;
     font-weight: 400;
 }
+.project-integral-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.interactive-banner-style-06 .interactive-banners-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-three-slide .interactive-banner-style-06 {
+    height: 505px;
+}
+.slider-three-slide .interactive-banner-style-06 .interactive-banners-image {
+    height: 100%;
+}
+.interactive-banner-style-06:hover .banners-icon {
+    opacity: 0;
+    visibility: hidden;
+}
+.interactive-banner-style-06:hover .interactive-banners-content .interactive-banners-content-text {
+    color: rgba(255, 255, 255, .88);
+}
 /* revolution slider */
 #architecture-slider .tp-splitted {
     text-align: inherit !important;
@@ -261,6 +285,9 @@ footer .elements-social li {
     .video-icon-extra-large .video-icon {
         width: 120px;
         height: 120px;
+    }
+    .slider-three-slide .interactive-banner-style-06 {
+        height: 440px;
     }
     .slider-navigation-style-07 {
         left: 0;
