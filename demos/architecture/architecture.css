@@ -76,6 +76,17 @@ header .navbar-brand img {
     padding-left: 15px;
     font-weight: 600;
 }
+.header-icon .header-social-icon a svg {
+    width: 22px;
+    height: 22px;
+}
+.home-header-contrast {
+    background: linear-gradient(180deg, rgba(3, 10, 14, .78) 0%, rgba(3, 10, 14, .42) 58%, rgba(3, 10, 14, 0) 100%) !important;
+}
+.home-header-contrast .navbar-brand img {
+    max-height: 72px;
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, .65));
+}
 header.sticky .navbar {
     min-height: 70px;
 }
@@ -246,6 +257,7 @@ footer .elements-social li {
 }
 /* magic cursor */
 .magic-drag-cursor #ball-cursor:before {
+  content: "< ARRASTRÁ >" !important;
   font-size: 15px;
 }
 /* media query responsive */
@@ -282,6 +294,9 @@ footer .elements-social li {
     }
 }
 @media (max-width: 767px) {
+    .home-header-contrast .navbar-brand img {
+        max-height: 54px;
+    }
     .video-icon-extra-large .video-icon {
         width: 120px;
         height: 120px;
