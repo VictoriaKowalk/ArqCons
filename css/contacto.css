@@ -1,0 +1,83 @@
+.contact-hero {
+    background-position: center 45%;
+}
+
+.contact-info-card {
+    height: 100%;
+    padding: 38px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .025);
+}
+
+.contact-info-card i {
+    color: var(--base-color);
+}
+
+.contact-form-panel {
+    padding: 70px;
+    background: #1d1d1d;
+}
+
+.contact-form-panel .form-control,
+.contact-form-panel .form-select {
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.contact-form-panel .form-control:focus,
+.contact-form-panel .form-select:focus {
+    border-color: var(--base-color);
+    box-shadow: none;
+}
+
+.contact-form-panel .form-select {
+    padding-left: 0;
+}
+
+.contact-form-panel .form-select option {
+    color: #222;
+}
+
+.contact-form-panel .form-control.is-invalid,
+.contact-form-panel .form-select.is-invalid {
+    border-color: #ff7b7b !important;
+    background-image: none;
+}
+
+.contact-form-panel .field-error {
+    display: block;
+    min-height: 20px;
+    margin-top: 6px;
+    color: #ff9b9b;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.contact-form-status {
+    min-height: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#contact-submit:disabled {
+    cursor: wait;
+    opacity: .72;
+}
+
+@media (max-width: 767px) {
+    .contact-form-panel {
+        padding: 35px 25px;
+    }
+
+    .contact-info-card {
+        padding: 28px;
+    }
+
+    #contact-submit {
+        width: 100%;
+        min-height: 50px;
+    }
+}

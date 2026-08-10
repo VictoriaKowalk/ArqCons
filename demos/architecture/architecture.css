@@ -76,12 +76,49 @@ header .navbar-brand img {
     padding-left: 15px;
     font-weight: 600;
 }
+
+/* Galeria de proyectos en Nosotros: recorte uniforme sin deformar las imagenes. */
+.about-project-gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+}
 .header-icon .header-social-icon a svg {
     width: 22px;
     height: 22px;
 }
+
+.hamburger-menu-simple .menu-address a[href^="mailto:"] {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.hamburger-menu-simple .elements-social .medium-icon {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.hamburger-menu-simple .elements-social .medium-icon li,
+.hamburger-menu-simple .elements-social .medium-icon a {
+    margin: 0 !important;
+}
 .home-header-contrast {
     background: linear-gradient(180deg, rgba(3, 10, 14, .78) 0%, rgba(3, 10, 14, .42) 58%, rgba(3, 10, 14, 0) 100%) !important;
+}
+
+/* El hero de Inicio comparte el mismo tratamiento oscuro que Servicios. */
+#architecture-slider .slotholder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(3, 10, 14, .42) 0%, rgba(3, 10, 14, .58) 100%);
 }
 .home-header-contrast .navbar-brand img {
     max-height: 72px;
@@ -93,6 +130,10 @@ header.sticky .navbar {
 .hamburger-menu-simple .menu-item-list .nav-link {
     font-size: 55px;
     line-height: 50px;
+}
+
+.hamburger-menu-simple .menu-item-list .menu-item.active .nav-link {
+    color: #8d8d8d;
 }
 header .elements-social ul li {
     margin-right: 25px;
@@ -239,6 +280,12 @@ header .elements-social ul li a {
     font-size: 5.375rem;
     line-height: 5.5rem;
 }
+
+/* Escala tipografica comun para todos los heroes interiores. */
+.project-detail-hero h1 {
+    font-size: 5.375rem;
+    line-height: 5.5rem;
+}
 .page-title-extra-small h2 {
     font-size: 13px;
     line-height: 26px;
@@ -313,5 +360,115 @@ footer .elements-social li {
     .hamburger-menu-simple .menu-item-list .nav-link {
         font-size: 38px;
         line-height: 34px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-title-extra-small h1,
+    .project-detail-hero h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        letter-spacing: -3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-header-contrast {
+        min-height: 100px;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .home-header-contrast .navbar-brand img {
+        filter: none;
+    }
+
+    .btn.btn-link,
+    footer .footer-navbar .nav-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .page-title-extra-small h1,
+    .project-detail-hero h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .page-title-extra-small h1,
+    .project-detail-hero h1 {
+        font-size: 2.55rem;
+        line-height: 2.8rem;
+        letter-spacing: -1.5px;
+    }
+}
+/* Accesibilidad de navegación por teclado */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #35b7e6;
+    outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+    .push-button,
+    .close-menu {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    footer a[href^="mailto:"] {
+        max-width: 100%;
+        font-size: clamp(14px, 4.2vw, 18px) !important;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-progress.d-none {
+        display: block !important;
+        top: auto;
+        right: 18px;
+        bottom: 18px;
+        width: 48px;
+        height: 48px;
+        transform: none;
+        mix-blend-mode: normal;
+    }
+
+    .scroll-progress .scroll-top {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #35b7e6;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+    }
+
+    .scroll-progress .scroll-text,
+    .scroll-progress .scroll-line {
+        display: none;
+    }
+
+    .scroll-progress .scroll-top::before {
+        content: "";
+        width: 11px;
+        height: 11px;
+        margin-top: 5px;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: rotate(45deg);
     }
 }
