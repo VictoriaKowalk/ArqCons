@@ -5,12 +5,13 @@
     if (!menu) return;
 
     const file = (window.location.pathname.split("/").pop() || "home.html").toLowerCase();
-    const section = file.startsWith("proyecto-") ? "proyectos.html" : file;
+    const section = file.startsWith("proyecto-") ? "proyectos.html" : file.startsWith("emprendimiento-") ? "emprendimientos.html" : file;
     const navItems = [
         ["home.html", "Inicio"],
         ["about.html", "Nosotros"],
         ["servicios.html", "Servicios"],
-        ["proyectos.html", "Proyectos"],
+        ["proyectos.html", "Residencias"],
+        ["emprendimientos.html", "Emprendimientos"],
         ["contacto.html", "Contacto"]
     ].map(function (item) {
         const active = section === item[0] ? " active" : "";
@@ -29,12 +30,11 @@
                         <div class="row mt-22 md-mt-30px sm-mt-25px align-items-start">
                             <div class="col-lg-4 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address">
                                 <span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Estudio</span>
-                                <p class="w-90 md-w-80">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p>
+                                <p class="w-90 md-w-80 text-white">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p>
                             </div>
                             <div class="col-lg-4 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address">
                                 <span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Hablemos</span>
-                                <a href="tel:+5491149975060" class="text-white-hover">+54 9 11 4997-5060</a><br>
-                                <a href="tel:+5491160132000" class="text-white-hover">+54 9 11 6013-2000</a>
+                                <a href="tel:+5491149975060" class="text-white">+54 9 11 4997-5060</a>
                             </div>
                             <div class="col-lg-4 last-paragraph-no-margin elements-social">
                                 <span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Seguinos</span>

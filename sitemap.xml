@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://arqcons.com.ar/home.html</loc><lastmod>2026-08-10</lastmod><priority>1.0</priority></url>
-  <url><loc>https://arqcons.com.ar/about.html</loc><lastmod>2026-08-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://arqcons.com.ar/servicios.html</loc><lastmod>2026-08-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://arqcons.com.ar/proyectos.html</loc><lastmod>2026-08-10</lastmod><priority>0.9</priority></url>
-  <url><loc>https://arqcons.com.ar/contacto.html</loc><lastmod>2026-08-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-puertos-del-lago.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-estancias-del-pilar.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-reserva-iii.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-reserva-iv.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-san-eliseo.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://arqcons.com.ar/proyecto-san-isidro-labrador.html</loc><lastmod>2026-08-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/</loc><lastmod>2026-09-07</lastmod><priority>1.0</priority></url>
+  <url><loc>https://arqcons.com.ar/about.html</loc><lastmod>2026-09-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://arqcons.com.ar/servicios.html</loc><lastmod>2026-09-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://arqcons.com.ar/proyectos.html</loc><lastmod>2026-09-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://arqcons.com.ar/emprendimientos.html</loc><lastmod>2026-09-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://arqcons.com.ar/contacto.html</loc><lastmod>2026-09-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-puertos-del-lago.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-estancias-del-pilar.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-reserva-i.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-reserva-ii.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-reserva-iii.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-reserva-iv.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-san-eliseo.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/proyecto-san-isidro-labrador.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/emprendimiento-boulevard-del-sol.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/emprendimiento-chateau-pilar.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/emprendimiento-habitat-residencias.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://arqcons.com.ar/emprendimiento-palmas-del-sol.html</loc><lastmod>2026-09-07</lastmod><priority>0.7</priority></url>
 </urlset>
