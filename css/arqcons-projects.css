@@ -1,6 +1,45 @@
-.project-card-image { aspect-ratio: 4 / 5; overflow: hidden; }
+.project-card-image { aspect-ratio: 4 / 5; overflow: hidden; border-bottom: 2px solid transparent; transition: border-color .3s ease; }
 .project-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .portfolio-box:hover .project-card-image img { transform: scale(1.035); }
+.portfolio-box:hover .project-card-image { border-bottom-color: var(--brand-teal); }
+/* Visible navigation between the two project collections */
+.portfolio-switcher {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    width: min(100%, 520px);
+    margin: 0 auto 52px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 3px;
+    background: rgba(10, 13, 15, .56);
+}
+.portfolio-switcher-link {
+    min-height: 46px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    line-height: 1.15;
+    border: 0;
+    border-radius: 2px;
+    background: transparent;
+    transition: color .25s ease, background-color .25s ease;
+}
+.portfolio-switcher-link:not(.is-active):hover {
+    color: #fff;
+    background: rgba(255, 255, 255, .07);
+}
+.portfolio-switcher-link.is-active {
+    color: #fff;
+    background: #0B6BAD;
+    box-shadow: 0 5px 16px rgba(11, 107, 173, .2);
+    cursor: default;
+}
 
 /* Project hero */
 .project-detail-hero {
@@ -82,7 +121,7 @@
 .project-lightbox-thumbs { position: absolute; left: 50%; bottom: 48px; transform: translateX(-50%); max-width: min(70vw, 900px); display: flex; gap: 7px; overflow-x: auto; padding: 5px; scrollbar-width: none; }
 .project-lightbox-thumb { flex: 0 0 54px; width: 54px; height: 38px; padding: 0; border: 1px solid transparent; background: transparent; opacity: .45; cursor: pointer; transition: opacity .25s, border-color .25s; }
 .project-lightbox-thumb img { width: 100%; height: 100%; object-fit: cover; }
-.project-lightbox-thumb.is-active { opacity: 1; border-color: #35b7e6; }
+.project-lightbox-thumb.is-active { opacity: 1; border-color: #54CAF2; }
 body.project-lightbox-open { overflow: hidden; }
 
 /* Project video */
@@ -113,11 +152,11 @@ body.project-lightbox-open { overflow: hidden; }
 .project-video-card:hover::before { transform: scale(1.04); }
 .project-video-shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(3,10,14,.08) 15%, rgba(3,10,14,.9) 100%); }
 .project-video-copy { display: grid; grid-template-columns: 1fr auto; align-items: end; width: 100%; gap: 10px 28px; }
-.project-video-copy .section-label { grid-column: 1 / -1; color: #35b7e6; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
+.project-video-copy .section-label { grid-column: 1 / -1; color: #54CAF2; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
 .project-video-copy strong { max-width: 590px; color: #fff; font-size: clamp(24px, 3vw, 40px); line-height: 1.08; letter-spacing: -1px; }
 .project-video-action { display: inline-flex; align-items: center; gap: 13px; color: #fff; font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; white-space: nowrap; }
-.project-video-action i { display: grid; place-items: center; width: 62px; height: 62px; padding-left: 3px; border-radius: 50%; background: #087bb8; color: #fff; transition: transform .3s ease, background-color .3s ease; }
-.project-video-card:hover .project-video-action i { transform: scale(1.08); background: #35b7e6; }
+.project-video-action i { display: grid; place-items: center; width: 62px; height: 62px; padding-left: 3px; border-radius: 50%; background: #0B6BAD; color: #fff; transition: transform .3s ease, background-color .3s ease; }
+.project-video-card:hover .project-video-action i { transform: scale(1.08); background: #54CAF2; }
 .project-video-modal { position: fixed; z-index: 10020; inset: 0; display: grid; place-items: center; padding: clamp(16px, 4vw, 64px); background: rgba(3,7,9,.96); opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility .3s; }
 .project-video-modal.is-open { opacity: 1; visibility: visible; }
 .project-video-frame { width: min(92vw, 1280px); aspect-ratio: 16 / 9; background: #000; transform: scale(.97); transition: transform .35s ease; }
@@ -132,7 +171,7 @@ body.project-video-open { overflow: hidden; }
 .project-section-link::after { content: ""; width: 7px; height: 7px; border: 1px solid currentColor; border-radius: 50%; transition: background .25s, transform .25s; }
 .project-section-link span { opacity: 0; transform: translateX(8px); transition: .25s ease; }
 .project-section-link:hover span, .project-section-link.is-active span { opacity: 1; transform: none; }
-.project-section-link.is-active { opacity: 1; color: #35b7e6; }
+.project-section-link.is-active { opacity: 1; color: #54CAF2; }
 .project-section-link.is-active::after { background: currentColor; transform: scale(1.35); }
 
 /* Visual project navigation */
@@ -142,13 +181,15 @@ body.project-video-open { overflow: hidden; }
 .project-nav-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
 .project-nav-card:hover img { transform: scale(1.055); }
 .project-nav-content { position: relative; z-index: 2; }
-.project-nav-label { display: block; margin-bottom: 8px; color: #35b7e6; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+.project-nav-label { display: block; margin-bottom: 8px; color: #54CAF2; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
 .project-nav-title { font-size: clamp(21px, 2.4vw, 34px); line-height: 1.15; }
 
 @keyframes projectIntro { to { opacity: 1; transform: none; } }
 @keyframes cuePulse { 0%, 100% { transform: scaleX(.45); opacity: .5; } 50% { transform: scaleX(1); opacity: 1; } }
 
 @media (max-width: 767px) {
+    .portfolio-switcher { margin-bottom: 38px; }
+    .portfolio-switcher-link { min-height: 44px; padding: 9px 8px; font-size: 13px; }
     .project-detail-hero { min-height: 68vh; }
     .project-scroll-cue { display: none; }
     .project-facts { grid-template-columns: 1fr; }
