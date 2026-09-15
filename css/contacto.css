@@ -37,7 +37,7 @@
     padding-right: 14px;
     padding-left: 14px;
     color: var(--white);
-    background: rgba(0, 102, 166, .09);
+    background: rgba(var(--brand-secondary-rgb), .09);
 }
 
 .contact-method-icon {
@@ -46,9 +46,9 @@
     height: 46px;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 102, 166, .55);
+    border: 1px solid rgba(var(--brand-primary-rgb), .55);
     border-radius: 50%;
-    color: var(--base-color);
+    color: var(--brand-green);
     font-size: 19px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .contact-method:hover .contact-method-arrow {
-    color: var(--base-color);
+    color: var(--brand-green);
     transform: translateX(3px);
 }
 
@@ -132,7 +132,7 @@
     padding: 8px 11px;
     border-radius: 20px;
     color: rgba(255, 255, 255, .72);
-    background: rgba(0, 102, 166, .12);
+    background: rgba(var(--brand-primary-rgb), .12);
     font-size: 11px;
     line-height: 1.3;
     white-space: nowrap;
@@ -176,8 +176,8 @@
 .contact-form-panel .form-control:focus,
 .contact-form-panel .form-select:focus {
     border-color: var(--base-color);
-    background-color: rgba(0, 102, 166, .055);
-    box-shadow: 0 0 0 3px rgba(0, 102, 166, .12);
+    background-color: rgba(var(--brand-primary-rgb), .055);
+    box-shadow: 0 0 0 3px rgba(var(--brand-primary-rgb), .12);
 }
 
 .contact-form-panel .form-select option {
@@ -225,7 +225,7 @@
     min-height: 48px;
     padding-right: 24px;
     padding-left: 24px;
-    color: var(--white);
+    color: var(--brand-charcoal);
     font-size: 12px;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .contact-direct-link a:hover {
-    color: var(--base-color);
+    color: var(--brand-green);
 }
 
 @media (max-width: 991px) {

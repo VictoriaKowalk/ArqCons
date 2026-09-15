@@ -9,15 +9,15 @@
     const header = `
         <header><nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed"><div class="container-fluid">
             <div class="col-auto col-lg-2 me-lg-0 me-auto d-none d-lg-flex"><div class="header-icon"><div class="header-social-icon icon social-text-style-01">${socialLinks}</div></div></div>
-            <div class="col-auto"><a class="navbar-brand" href="home.html"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="default-logo"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="alt-logo"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="mobile-logo"></a></div>
+            <div class="col-auto"><a class="navbar-brand" href="index.html"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="default-logo"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="alt-logo"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons" class="mobile-logo"></a></div>
             <div class="col-auto col-lg-2 text-end"><div class="header-icon header-push-button hamburger-push-button icon"><div class="push-button"><span></span><span></span><span></span><span></span></div></div></div>
         </div></nav><div class="push-menu hamburger-nav hamburger-menu-simple header-dark bg-dark-gray background-position-center-top" style="background-image:url('images/vertical-line-bg-small.svg')"><span class="close-menu text-dark-gray text-dark-gray-hover bg-white"><i class="fa-solid fa-xmark"></i></span><div class="container h-100"><div class="row align-items-center justify-content-center h-100">
-            <div class="col-lg-8 col-md-6 order-2 order-md-1 d-none d-md-inline-block"><a class="hamburger-logo d-inline-block" href="home.html"><img src="images/Logo/logo.png" class="w-auto" alt="ArqCons"></a><div class="row mt-22 md-mt-30px sm-mt-25px align-items-start"><div class="col-lg-5 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address menu-contact-data"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Ubicación</span><p class="w-90 md-w-80">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires</p></div><div class="col-lg-4 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Contacto</span><a href="tel:+5491149975060" class="text-white-hover">+54 9 11 4997-5060</a><br><a href="mailto:arqcons.arquitectura@gmail.com" class="text-decoration-line-bottom text-white">arqcons.arquitectura@gmail.com</a></div><div class="col-lg-3 last-paragraph-no-margin elements-social menu-social-links"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Seguinos</span><div class="social-icon-style-02 mt-15px"><div class="medium-icon light">${socialLinks}</div></div></div></div></div>
-            <div class="col-lg-3 col-md-5 offset-md-1 order-1 order-md-2 text-center text-md-start"><div class="hamburger-menu menu-list-wrapper" data-scroll-options='{ "theme": "light" }'><ul class="menu-item-list alt-font ls-minus-05px p-0"><li class="menu-item"><a href="home.html" class="nav-link">Inicio</a></li><li class="menu-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="menu-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="menu-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="menu-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="menu-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div></div>
+            <div class="col-lg-8 col-md-6 order-2 order-md-1 d-none d-md-inline-block"><a class="hamburger-logo d-inline-block" href="index.html"><img src="images/Logo/logo.png" class="w-auto" alt="ArqCons"></a><div class="row mt-22 md-mt-30px sm-mt-25px align-items-start"><div class="col-lg-5 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address menu-contact-data"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Ubicación</span><p class="w-90 md-w-80">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires</p></div><div class="col-lg-4 last-paragraph-no-margin md-mb-30px sm-mb-20px menu-address"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Contacto</span><a href="tel:+5491149975060" class="text-white-hover">+54 9 11 4997-5060</a><br><a href="mailto:arqcons.arquitectura@gmail.com" class="text-decoration-line-bottom text-white">arqcons.arquitectura@gmail.com</a></div><div class="col-lg-3 last-paragraph-no-margin elements-social menu-social-links"><span class="text-base-color fs-14 fw-600 ls-2px text-uppercase mb-5px d-block">Seguinos</span><div class="social-icon-style-02 mt-15px"><div class="medium-icon light">${socialLinks}</div></div></div></div></div>
+            <div class="col-lg-3 col-md-5 offset-md-1 order-1 order-md-2 text-center text-md-start"><div class="hamburger-menu menu-list-wrapper" data-scroll-options='{ "theme": "light" }'><ul class="menu-item-list alt-font ls-minus-05px p-0"><li class="menu-item"><a href="index.html" class="nav-link">Inicio</a></li><li class="menu-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="menu-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="menu-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="menu-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="menu-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div></div>
             <div class="col-12 menu-text border-top border-color-transparent-white-light d-none d-md-inline-block text-center pt-3 pb-3 order-3"><h6 class="fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-inline-block align-middle ms-20px me-20px mt-5px w-70px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div>
         </div></div></div></header>`;
 
-const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 sm-pt-9 xs-pt-11 background-position-center-top" style="background-image:url('images/demo-architecture-dotted-pattern.svg')"><div class="container"><div class="row align-items-center mb-3 md-mb-5 xs-mb-8"><div class="col-sm-10 text-center text-sm-start order-2 order-sm-1"><h6 class="text-white fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-none d-sm-inline-block align-middle ms-20px me-20px lg-ms-10px lg-me-10px mt-5px w-70px lg-w-50px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div><div class="col-sm-2 text-center text-sm-end order-1 order-sm-2 xs-mb-15px"><a href="home.html" class="footer-logo d-inline-block"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons"></a></div></div><div class="row align-items-start mb-6 xs-mb-9"><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Ubicación</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p></div><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Teléfono</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28"><a href="tel:+5491149975060" class="text-white">+54 9 11 4997-5060</a></p></div><div class="col-md-4 last-paragraph-no-margin ms-auto text-center text-sm-start text-lg-end fs-19"><span class="section-label text-base-color d-block fw-600 text-uppercase mb-10px">Hablemos de tu proyecto</span><a href="contacto.html" class="text-white fw-500 text-decoration-line-bottom">Contactanos</a></div></div></div><div class="footer-bottom p-20px border-top border-color-transparent-white-light"><div class="container"><div class="row align-items-center"><div class="col-lg-7 text-center text-lg-start md-mb-10px"><ul class="footer-navbar fs-15 lh-normal"><li class="nav-item"><a href="home.html" class="nav-link">Inicio</a></li><li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="nav-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="nav-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div><div class="col-lg-5 text-center text-lg-end"><span class="fs-15">&copy; 2026 ArqCons. Todos los derechos reservados. Desarrollado por <a href="https://estudiohs.com.ar/" target="_blank" rel="noopener noreferrer" class="section-label text-base-color fw-600 text-uppercase">HEMISFERIO SUR</a></span></div></div></div></div></footer><div class="scroll-progress d-none d-xxl-block"><a href="#" class="scroll-top" aria-label="Volver al inicio"><span class="scroll-text">Subir</span><span class="scroll-line"><span class="scroll-point"></span></span></a></div>`;
+const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 sm-pt-9 xs-pt-11 background-position-center-top" style="background-image:url('images/demo-architecture-dotted-pattern.svg')"><div class="container"><div class="row align-items-center mb-3 md-mb-5 xs-mb-8"><div class="col-sm-10 text-center text-sm-start order-2 order-sm-1"><h6 class="text-white fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-none d-sm-inline-block align-middle ms-20px me-20px lg-ms-10px lg-me-10px mt-5px w-70px lg-w-50px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div><div class="col-sm-2 text-center text-sm-end order-1 order-sm-2 xs-mb-15px"><a href="index.html" class="footer-logo d-inline-block"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons"></a></div></div><div class="row align-items-start mb-6 xs-mb-9"><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Ubicación</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p></div><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Teléfono</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28"><a href="tel:+5491149975060" class="text-white">+54 9 11 4997-5060</a></p></div><div class="col-md-4 last-paragraph-no-margin ms-auto text-center text-sm-start text-lg-end fs-19"><span class="section-label text-base-color d-block fw-600 text-uppercase mb-10px">Hablemos de tu proyecto</span><a href="contacto.html" class="text-white fw-500 text-decoration-line-bottom">Contactanos</a></div></div></div><div class="footer-bottom p-20px border-top border-color-transparent-white-light"><div class="container"><div class="row align-items-center"><div class="col-lg-7 text-center text-lg-start md-mb-10px"><ul class="footer-navbar fs-15 lh-normal"><li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li><li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="nav-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="nav-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div><div class="col-lg-5 text-center text-lg-end"><span class="fs-15">&copy; 2026 ArqCons. Todos los derechos reservados. Desarrollado por <a href="https://estudiohs.com.ar/" target="_blank" rel="noopener noreferrer" class="section-label text-base-color fw-600 text-uppercase">HEMISFERIO SUR</a></span></div></div></div></div></footer><div class="scroll-progress d-none d-xxl-block"><a href="#" class="scroll-top" aria-label="Volver al inicio"><span class="scroll-text">Subir</span><span class="scroll-line"><span class="scroll-point"></span></span></a></div>`;
 
     const projects = {
         "proyecto-reserva-i.html": { title: "La Reserva Cardales", folder: "Casa Reserva I", image: "images/proyectos/Casa Reserva I/Sbarbati 003.webp" },
@@ -49,11 +49,13 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         heroImage = resolvedHeroImage;
         media.style.setProperty("--project-hero-image", `url("${resolvedHeroImage}")`);
         hero.prepend(media);
-        const cue = document.createElement("a");
-        cue.className = "project-scroll-cue";
-        cue.href = "#project-story";
-        cue.textContent = "Explorar proyecto";
-        hero.append(cue);
+        if (!document.body.classList.contains("project-detail-pilot")) {
+            const cue = document.createElement("a");
+            cue.className = "project-scroll-cue";
+            cue.href = "#project-story";
+            cue.textContent = "Explorar proyecto";
+            hero.append(cue);
+        }
         const story = hero.nextElementSibling;
         if (story) story.id = "project-story";
         if (!reducedMotion) {
@@ -121,8 +123,76 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
             ? files.map(function (file) { return `${root}/${folder}/${file}`; })
             : Array.from({ length: count }, function (_, index) { return `${root}/${folder}/${index + 1}.webp`; });
         gallery.innerHTML = images.map(function (source, index) {
-            return `<a href="${source}" class="project-gallery-item" data-project-image="${index}" aria-label="Abrir imagen ${index + 1} de ${count}"><img src="${source}" alt="${title} — imagen ${index + 1}" loading="${index > 2 ? "lazy" : "eager"}" decoding="async"><span class="project-image-number">${String(index + 1).padStart(2, "0")} / ${String(count).padStart(2, "0")}</span></a>`;
+            return `<a href="${source}" class="project-gallery-item" data-project-image="${index}" aria-label="Abrir imagen ${index + 1} de ${count}"><img src="${source}" alt="${title} — imagen ${index + 1}" loading="${index > 2 ? "lazy" : "eager"}" decoding="async" draggable="false"><span class="project-image-number">${String(index + 1).padStart(2, "0")} / ${String(count).padStart(2, "0")}</span></a>`;
         }).join("");
+
+        if (gallery.dataset.galleryMode === "slider") {
+            const section = gallery.closest(".project-gallery-section");
+            const items = Array.from(gallery.querySelectorAll(".project-gallery-item"));
+            const previous = section?.querySelector("[data-gallery-prev]");
+            const next = section?.querySelector("[data-gallery-next]");
+            const current = section?.querySelector("[data-gallery-current]");
+            const total = section?.querySelector("[data-gallery-total]");
+            const progress = section?.querySelector("[data-gallery-progress]");
+            let activeSlide = 0;
+            let ticking = false;
+            let pointerDown = false;
+            let dragged = false;
+            let startX = 0;
+            let startScroll = 0;
+
+            if (total) total.textContent = String(items.length).padStart(2, "0");
+            function updateSlider(index) {
+                activeSlide = Math.max(0, Math.min(index, items.length - 1));
+                if (current) current.textContent = String(activeSlide + 1).padStart(2, "0");
+                if (progress) progress.style.transform = `scaleX(${(activeSlide + 1) / items.length})`;
+                if (previous) previous.disabled = activeSlide === 0;
+                if (next) next.disabled = activeSlide === items.length - 1;
+            }
+            function goTo(index) {
+                const item = items[Math.max(0, Math.min(index, items.length - 1))];
+                if (item) gallery.scrollTo({ left: item.offsetLeft, behavior: reducedMotion ? "auto" : "smooth" });
+            }
+            function syncSlider() {
+                const index = items.reduce(function (closest, item, index) {
+                    return Math.abs(item.offsetLeft - gallery.scrollLeft) < Math.abs(items[closest].offsetLeft - gallery.scrollLeft) ? index : closest;
+                }, 0);
+                updateSlider(index);
+                ticking = false;
+            }
+            gallery.addEventListener("scroll", function () {
+                if (!ticking) { ticking = true; window.requestAnimationFrame(syncSlider); }
+            }, { passive: true });
+            previous?.addEventListener("click", function () { goTo(activeSlide - 1); });
+            next?.addEventListener("click", function () { goTo(activeSlide + 1); });
+            gallery.addEventListener("pointerdown", function (event) {
+                if (event.pointerType === "mouse" && event.button !== 0) return;
+                pointerDown = true;
+                dragged = false;
+                startX = event.clientX;
+                startScroll = gallery.scrollLeft;
+                gallery.classList.add("is-dragging");
+                gallery.setPointerCapture?.(event.pointerId);
+            });
+            gallery.addEventListener("pointermove", function (event) {
+                if (!pointerDown) return;
+                const distance = event.clientX - startX;
+                if (Math.abs(distance) > 6) dragged = true;
+                gallery.scrollLeft = startScroll - distance;
+            });
+            function finishDrag(event) {
+                if (!pointerDown) return;
+                pointerDown = false;
+                gallery.classList.remove("is-dragging");
+                gallery.releasePointerCapture?.(event.pointerId);
+            }
+            gallery.addEventListener("pointerup", finishDrag);
+            gallery.addEventListener("pointercancel", finishDrag);
+            gallery.addEventListener("click", function (event) {
+                if (dragged) { event.preventDefault(); event.stopImmediatePropagation(); dragged = false; }
+            }, true);
+            updateSlider(0);
+        }
     });
 
     const revealItems = document.querySelectorAll(".project-fact, .project-gallery-item");
@@ -133,7 +203,7 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
     }
 
     const galleryItems = document.querySelectorAll(".project-gallery-item");
-    if (galleryItems.length) {
+    if (galleryItems.length && !document.body.classList.contains("project-detail-pilot")) {
         const cursor = document.createElement("div");
         cursor.className = "project-view-cursor";
         cursor.textContent = "Ver";
@@ -159,6 +229,8 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         function open(index, trigger) { lastTrigger = trigger || null; show(index); lightbox.classList.add("is-open"); document.body.classList.add("project-lightbox-open"); lightbox.querySelector(".project-lightbox-close").focus(); }
         function close() { lightbox.classList.remove("is-open"); document.body.classList.remove("project-lightbox-open"); if (lastTrigger) lastTrigger.focus(); }
         document.querySelectorAll("[data-project-image]").forEach(function (item) { item.addEventListener("click", function (event) { event.preventDefault(); open(Number(item.dataset.projectImage), item); }); });
+        const openGallery = document.querySelector("[data-gallery-open]");
+        if (openGallery) openGallery.addEventListener("click", function () { open(0, openGallery); });
         lightbox.querySelector(".project-lightbox-close").addEventListener("click", close);
         lightbox.querySelector(".project-lightbox-prev").addEventListener("click", function () { show(activeIndex - 1); });
         lightbox.querySelector(".project-lightbox-next").addEventListener("click", function () { show(activeIndex + 1); });
@@ -189,17 +261,20 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
     }
 
     const gallerySection = document.querySelector("[data-project-gallery]")?.closest("section");
+    const contactSection = document.querySelector(".project-contact-cta");
     const visualNav = document.querySelector(".project-nav");
     if (hero && gallerySection && visualNav) {
         hero.id = "project-top";
         gallerySection.id = "project-gallery";
+        if (contactSection) contactSection.id = "project-contact";
         visualNav.id = "project-next";
+        if (document.body.classList.contains("project-detail-pilot")) return;
         const sectionNav = document.createElement("nav");
         sectionNav.className = "project-section-nav";
         sectionNav.setAttribute("aria-label", "Secciones del proyecto");
-        sectionNav.innerHTML = `<a class="project-section-link is-active" href="#project-top"><span>Inicio</span></a><a class="project-section-link" href="#project-story"><span>Historia</span></a><a class="project-section-link" href="#project-gallery"><span>Galería</span></a><a class="project-section-link" href="#project-next"><span>Más proyectos</span></a>`;
+        sectionNav.innerHTML = `<a class="project-section-link is-active" href="#project-top"><span>Inicio</span></a><a class="project-section-link" href="#project-story"><span>Historia</span></a><a class="project-section-link" href="#project-gallery"><span>Galería</span></a>${contactSection ? '<a class="project-section-link" href="#project-contact"><span>Contacto</span></a>' : ''}<a class="project-section-link" href="#project-next"><span>Más proyectos</span></a>`;
         document.body.append(sectionNav);
-        const observedSections = [hero, document.querySelector("#project-story"), gallerySection, visualNav];
+        const observedSections = [hero, document.querySelector("#project-story"), gallerySection, contactSection, visualNav];
         const sectionLinks = sectionNav.querySelectorAll(".project-section-link");
         const sectionObserver = new IntersectionObserver(function (entries) { entries.forEach(function (entry) { if (entry.isIntersecting) sectionLinks.forEach(function (link) { link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`); }); }); }, { rootMargin: "-38% 0px -52%", threshold: 0 });
         observedSections.forEach(function (section) { if (section) sectionObserver.observe(section); });

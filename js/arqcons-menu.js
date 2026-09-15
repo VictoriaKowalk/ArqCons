@@ -4,10 +4,10 @@
     const menu = document.querySelector(".push-menu.hamburger-nav");
     if (!menu) return;
 
-    const file = (window.location.pathname.split("/").pop() || "home.html").toLowerCase();
+    const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
     const section = file.startsWith("proyecto-") ? "proyectos.html" : file.startsWith("emprendimiento-") ? "emprendimientos.html" : file;
     const navItems = [
-        ["home.html", "Inicio"],
+        ["index.html", "Inicio"],
         ["about.html", "Nosotros"],
         ["servicios.html", "Servicios"],
         ["proyectos.html", "Residencias"],
@@ -24,7 +24,7 @@
             <div class="container h-100">
                 <div class="row align-items-center justify-content-center h-100">
                     <div class="col-lg-8 col-md-6 order-2 order-md-1 d-none d-md-inline-block">
-                        <a class="hamburger-logo d-inline-block" href="home.html">
+                        <a class="hamburger-logo d-inline-block" href="index.html">
                             <img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" class="w-auto" alt="ArqCons">
                         </a>
                         <div class="row mt-22 md-mt-30px sm-mt-25px align-items-start">
