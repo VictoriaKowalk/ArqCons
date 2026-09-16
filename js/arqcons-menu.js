@@ -1,6 +1,25 @@
 (function () {
     "use strict";
 
+    const whatsappUrl = "https://api.whatsapp.com/send/?phone=5491149975060&text=Hola+ArqCons%2C+quiero+conversar+sobre+un+proyecto.&type=phone_number&app_absent=0";
+    let whatsappButton = document.querySelector(".site-whatsapp-fab, .mobile-whatsapp-fab");
+
+    if (!whatsappButton) {
+        whatsappButton = document.createElement("a");
+        whatsappButton.innerHTML = `
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12.04 2a9.84 9.84 0 0 0-8.49 14.8L2 22l5.33-1.52A9.93 9.93 0 1 0 12.04 2Zm0 17.9a8 8 0 0 1-4.08-1.12l-.29-.17-3.16.9.84-3.08-.19-.31a8 8 0 1 1 6.88 3.78Zm4.39-5.98c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19a7.2 7.2 0 0 1-1.33-1.65c-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.59 4.11 3.63.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+            </svg>`;
+        document.body.appendChild(whatsappButton);
+    }
+
+    whatsappButton.classList.add("site-whatsapp-fab");
+    whatsappButton.href = whatsappUrl;
+    whatsappButton.target = "_blank";
+    whatsappButton.rel = "noopener";
+    whatsappButton.setAttribute("aria-label", "Consultar por WhatsApp");
+    whatsappButton.setAttribute("title", "Consultar por WhatsApp");
+
     const menu = document.querySelector(".push-menu.hamburger-nav");
     if (!menu) return;
 

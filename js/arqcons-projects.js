@@ -17,7 +17,7 @@
             <div class="col-12 menu-text border-top border-color-transparent-white-light d-none d-md-inline-block text-center pt-3 pb-3 order-3"><h6 class="fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-inline-block align-middle ms-20px me-20px mt-5px w-70px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div>
         </div></div></div></header>`;
 
-const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 sm-pt-9 xs-pt-11 background-position-center-top" style="background-image:url('images/demo-architecture-dotted-pattern.svg')"><div class="container"><div class="row align-items-center mb-3 md-mb-5 xs-mb-8"><div class="col-sm-10 text-center text-sm-start order-2 order-sm-1"><h6 class="text-white fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-none d-sm-inline-block align-middle ms-20px me-20px lg-ms-10px lg-me-10px mt-5px w-70px lg-w-50px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div><div class="col-sm-2 text-center text-sm-end order-1 order-sm-2 xs-mb-15px"><a href="index.html" class="footer-logo d-inline-block"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons"></a></div></div><div class="row align-items-start mb-6 xs-mb-9"><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Ubicación</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p></div><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Teléfono</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28"><a href="tel:+5491149975060" class="text-white">+54 9 11 4997-5060</a></p></div><div class="col-md-4 last-paragraph-no-margin ms-auto text-center text-sm-start text-lg-end fs-19"><span class="section-label text-base-color d-block fw-600 text-uppercase mb-10px">Hablemos de tu proyecto</span><a href="contacto.html" class="text-white fw-500 text-decoration-line-bottom">Contactanos</a></div></div></div><div class="footer-bottom p-20px border-top border-color-transparent-white-light"><div class="container"><div class="row align-items-center"><div class="col-lg-7 text-center text-lg-start md-mb-10px"><ul class="footer-navbar fs-15 lh-normal"><li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li><li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="nav-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="nav-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div><div class="col-lg-5 text-center text-lg-end"><span class="fs-15">&copy; 2026 ArqCons. Todos los derechos reservados. Desarrollado por <a href="https://estudiohs.com.ar/" target="_blank" rel="noopener noreferrer" class="section-label text-base-color fw-600 text-uppercase">HEMISFERIO SUR</a></span></div></div></div></div></footer><div class="scroll-progress d-none d-xxl-block"><a href="#" class="scroll-top" aria-label="Volver al inicio"><span class="scroll-text">Subir</span><span class="scroll-line"><span class="scroll-point"></span></span></a></div>`;
+const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 sm-pt-9 xs-pt-11 background-position-center-top" style="background-image:url('images/demo-architecture-dotted-pattern.svg')"><div class="container"><div class="row align-items-center mb-3 md-mb-5 xs-mb-8"><div class="col-sm-10 text-center text-sm-start order-2 order-sm-1"><h6 class="text-white fw-400 d-inline-block align-middle mb-0">Construyamos algo <span class="text-white">increíble juntos</span></h6><div class="separator-line-1px d-none d-sm-inline-block align-middle ms-20px me-20px lg-ms-10px lg-me-10px mt-5px w-70px lg-w-50px bg-base-color"></div><a href="mailto:arqcons.arquitectura@gmail.com" class="text-base-color fs-26 fw-500 d-inline-block align-middle">arqcons.arquitectura@gmail.com</a></div><div class="col-sm-2 text-center text-sm-end order-1 order-sm-2 xs-mb-15px"><a href="index.html" class="footer-logo d-inline-block"><img src="images/Logo/logo.png" data-at2x="images/Logo/logo.png" alt="ArqCons"></a></div></div><div class="row align-items-start mb-6 xs-mb-9"><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Ubicación</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28">Av. Caamaño 1370, Vohe Studios, Estudio 209, Pilar, Buenos Aires, Argentina</p></div><div class="col-md-4 last-paragraph-no-margin text-center text-sm-start md-mb-30px"><span class="section-label text-base-color d-block fw-600 text-uppercase">Teléfono</span><p class="w-80 lg-w-95 md-w-70 sm-w-85 xs-mx-auto text-white fs-15 lh-28"><a href="tel:+5491149975060" class="text-white">+54 9 11 4997-5060</a></p></div><div class="col-md-4 last-paragraph-no-margin ms-auto text-center text-sm-start text-lg-end fs-19"><span class="section-label text-base-color d-block fw-600 text-uppercase mb-10px">Hablemos de tu proyecto</span><a href="contacto.html" class="text-white fw-500 text-decoration-line-bottom">Contactanos</a></div></div></div><div class="footer-bottom p-20px border-top border-color-transparent-white-light"><div class="container"><div class="row align-items-center"><div class="col-lg-7 text-center text-lg-start md-mb-10px"><ul class="footer-navbar fs-15 lh-normal"><li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li><li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li><li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li><li class="nav-item"><a href="proyectos.html" class="nav-link">Residencias</a></li><li class="nav-item"><a href="emprendimientos.html" class="nav-link">Emprendimientos</a></li><li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li></ul></div><div class="col-lg-5 text-center text-lg-end"><span class="footer-copyright fs-15">&copy; 2026 ArqCons. Todos los derechos reservados.</span><span class="footer-credit fs-15">Desarrollado por <a href="https://estudiohs.com.ar/" target="_blank" rel="noopener noreferrer" class="section-label text-base-color fw-600 text-uppercase">HEMISFERIO SUR</a></span></div></div></div></div></footer><div class="scroll-progress d-none d-xxl-block"><a href="#" class="scroll-top" aria-label="Volver al inicio"><span class="scroll-text">Subir</span><span class="scroll-line"><span class="scroll-point"></span></span></a></div>`;
 
     const projects = {
         "proyecto-reserva-i.html": { title: "La Reserva Cardales", folder: "Casa Reserva I", image: "images/proyectos/Casa Reserva I/Sbarbati 003.webp" },
@@ -38,6 +38,49 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
     const footerTarget = document.querySelector("[data-arqcons-footer]");
     if (headerTarget) headerTarget.outerHTML = header;
     if (footerTarget) footerTarget.outerHTML = footer;
+
+    document.querySelectorAll(".portfolio-listing .portfolio-box").forEach(function (card) {
+        const destination = card.querySelector("a[href]");
+        const title = card.querySelector(".pt-30px > a");
+        if (!destination) return;
+
+        card.classList.add("is-clickable");
+        card.setAttribute("role", "link");
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("aria-label", `Ver ${title ? title.textContent.trim() : "proyecto"}`);
+
+        card.addEventListener("click", function (event) {
+            if (event.target.closest("a")) return;
+            window.location.href = destination.href;
+        });
+
+        card.addEventListener("keydown", function (event) {
+            if (event.key !== "Enter" && event.key !== " ") return;
+            event.preventDefault();
+            window.location.href = destination.href;
+        });
+    });
+
+    const longProjectStory = document.querySelector(".project-detail-pilot .project-story-body");
+    if (longProjectStory && longProjectStory.querySelectorAll(":scope > p").length > 2) {
+        longProjectStory.id = longProjectStory.id || "project-story-content";
+        longProjectStory.classList.add("is-collapsible");
+
+        const storyToggle = document.createElement("button");
+        storyToggle.type = "button";
+        storyToggle.className = "project-story-toggle";
+        storyToggle.setAttribute("aria-expanded", "false");
+        storyToggle.setAttribute("aria-controls", longProjectStory.id);
+        storyToggle.innerHTML = '<span>Leer desarrollo completo</span><i class="fa-solid fa-plus" aria-hidden="true"></i>';
+        longProjectStory.appendChild(storyToggle);
+
+        storyToggle.addEventListener("click", function () {
+            const expanded = longProjectStory.classList.toggle("is-expanded");
+            storyToggle.setAttribute("aria-expanded", String(expanded));
+            storyToggle.querySelector("span").textContent = expanded ? "Mostrar menos" : "Leer desarrollo completo";
+            storyToggle.querySelector("i").className = expanded ? "fa-solid fa-minus" : "fa-solid fa-plus";
+        });
+    }
 
     const hero = document.querySelector(".project-detail-hero");
     let heroImage = "";

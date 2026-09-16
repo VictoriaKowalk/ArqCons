@@ -96,6 +96,11 @@
 .portfolio-listing .portfolio-box:focus-within .pt-30px > a {
     color: var(--brand-green) !important;
 }
+.portfolio-listing .portfolio-box.is-clickable { cursor: pointer; }
+.portfolio-listing .portfolio-box.is-clickable:focus-visible {
+    outline: 2px solid var(--brand-green);
+    outline-offset: 6px;
+}
 
 @media (hover: none) {
     .portfolio-listing .project-card-image::before,
@@ -255,6 +260,7 @@
     font-size: 17px;
     line-height: 1.8;
 }
+.project-story-toggle { display: none; }
 .project-gallery-section.pt-0 {
     padding-top: clamp(42px, 4vw, 60px) !important;
     padding-bottom: clamp(30px, 3vw, 42px);
@@ -497,11 +503,146 @@ body.project-video-open { overflow: hidden; }
 @keyframes cuePulse { 0%, 100% { transform: scaleX(.45); opacity: .5; } 50% { transform: scaleX(1); opacity: 1; } }
 
 @media (max-width: 767px) {
-    .portfolio-switcher { margin-bottom: 38px; }
-    .portfolio-switcher-link { min-height: 44px; padding: 9px 8px; font-size: 13px; }
+    .portfolio-listing main + .home-footer-white {
+        border-top: 0 !important;
+        box-shadow: none !important;
+    }
+    .residences-hero,
+    .developments-hero {
+        background-position: 56% center !important;
+    }
+    .residences-hero-row,
+    .developments-hero-row {
+        min-height: 58svh !important;
+        padding-bottom: 54px !important;
+    }
+    .residences-hero-copy h1,
+    .developments-hero-copy h1 {
+        margin-bottom: 12px !important;
+        font-size: clamp(42px, 13vw, 54px) !important;
+        line-height: .94 !important;
+        letter-spacing: -2px !important;
+    }
+    .developments-hero-copy h1 {
+        font-size: clamp(36px, 10.5vw, 44px) !important;
+    }
+    .residences-hero-copy h2,
+    .developments-hero-copy h2 {
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 11px !important;
+        line-height: 1.55 !important;
+        letter-spacing: 2px !important;
+    }
+    .portfolio-listing-section {
+        padding-top: 64px;
+        padding-bottom: 76px;
+    }
+    .portfolio-listing-intro {
+        margin-bottom: 34px !important;
+    }
+    .portfolio-listing-intro .section-label {
+        margin-bottom: 12px !important;
+        font-size: 11px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+    .portfolio-listing-intro h4 {
+        max-width: 340px;
+        margin-right: auto;
+        margin-bottom: 16px !important;
+        margin-left: auto;
+        font-size: clamp(30px, 8.4vw, 35px);
+        line-height: 1.14;
+        letter-spacing: -1px;
+    }
+    .portfolio-listing-intro p {
+        max-width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+    .portfolio-switcher {
+        gap: 4px;
+        width: 100%;
+        margin-bottom: 38px;
+        padding: 4px;
+    }
+    .portfolio-switcher-link {
+        min-width: 0;
+        min-height: 46px;
+        padding: 9px 4px;
+        font-size: 12px;
+        letter-spacing: 0;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+    .portfolio-grid {
+        --bs-gutter-y: 38px;
+    }
+    .portfolio-listing .portfolio-box .project-card-image {
+        aspect-ratio: 4 / 3;
+    }
+    .portfolio-listing .portfolio-box .pt-30px {
+        padding-top: 17px !important;
+    }
+    .portfolio-listing .portfolio-box .pt-30px > a {
+        margin-bottom: 4px !important;
+        font-size: 21px !important;
+        line-height: 1.25;
+    }
+    .portfolio-listing .portfolio-box .pt-30px > span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .project-detail-pilot main + .home-footer-white {
+        border-top: 0 !important;
+        box-shadow: none !important;
+    }
+    .project-detail-pilot .project-detail-hero {
+        min-height: 60svh;
+    }
+    .project-detail-pilot .project-detail-hero .container {
+        bottom: 34px;
+    }
+    .project-detail-pilot .project-detail-hero h1 {
+        max-width: 340px;
+        font-size: clamp(34px, 10vw, 42px);
+        line-height: 1.02;
+        letter-spacing: -1.5px !important;
+    }
+    .project-detail-pilot .project-story-pilot {
+        padding-top: 62px;
+        padding-bottom: 46px;
+    }
+    .project-detail-pilot .project-story-intro .section-label,
+    .project-detail-pilot .project-facts-panel .section-label,
+    .project-detail-pilot .project-gallery-heading .section-label,
+    .project-detail-pilot .project-story-details-heading .section-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
     .project-detail-hero { min-height: 68vh; }
     .project-scroll-cue { display: none; }
-    .project-facts { grid-template-columns: 1fr; }
+    .project-detail-pilot .project-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 16px;
+    }
+    .project-detail-pilot .project-fact {
+        padding-bottom: 12px;
+        opacity: 1;
+        transform: none;
+    }
+    .project-detail-pilot .project-fact > span:first-child {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+    .project-detail-pilot .project-facts-panel .project-fact > span:last-child {
+        font-size: 16px;
+        line-height: 1.4;
+    }
     .project-gallery { grid-template-columns: 1fr; }
     .project-gallery-item, .project-gallery-item:nth-child(n) { grid-column: auto; cursor: pointer; }
     .project-gallery-item img, .project-gallery-item:nth-child(n) img { height: auto; aspect-ratio: 4 / 3; }
@@ -518,25 +659,91 @@ body.project-video-open { overflow: hidden; }
     .project-video-action i { width: 54px; height: 54px; }
     .project-video-frame { width: 100%; }
     .venture-amenities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .project-detail-pilot .project-story-layout { grid-template-columns: 1fr; gap: 42px; }
+    .project-detail-pilot .project-story-layout { grid-template-columns: 1fr; gap: 34px; }
     .project-detail-pilot .project-story-intro h4,
     .project-detail-pilot .project-gallery-heading h2,
-    .project-detail-pilot .project-story-details-heading h2 { font-size: 31px; letter-spacing: -1px; }
-    .project-detail-pilot .project-story-quote { padding-left: 16px; font-size: 17px; }
+    .project-detail-pilot .project-story-details-heading h2 {
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: -1px;
+    }
+    .project-detail-pilot .project-story-intro h4 {
+        margin-bottom: 22px;
+    }
+    .project-detail-pilot .project-story-quote {
+        padding-left: 14px;
+        font-size: 16px;
+        line-height: 1.65;
+    }
     .project-detail-pilot .project-facts-panel { grid-row: 2; align-self: start; margin-bottom: 0; padding-top: 0; }
     .project-detail-pilot .project-story-body { grid-column: auto; }
     .project-detail-pilot .project-story-body > p { font-size: 16px; line-height: 1.7; }
-    .project-gallery-heading { align-items: start; flex-direction: column; gap: 24px; }
+    .project-detail-pilot .project-story-body.is-collapsible:not(.is-expanded) > p:nth-of-type(n + 3) {
+        display: none;
+    }
+    .project-story-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        width: 100%;
+        min-height: 50px;
+        margin-top: 28px;
+        padding: 13px 0;
+        border: 0;
+        border-top: 1px solid rgba(255, 255, 255, .16);
+        border-bottom: 1px solid rgba(255, 255, 255, .16);
+        background: transparent;
+        color: var(--brand-green);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .7px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .project-story-toggle i {
+        flex: 0 0 auto;
+        font-size: 14px;
+    }
+    .project-gallery-section.pt-0 {
+        padding-top: 54px !important;
+        padding-bottom: 42px;
+    }
+    .project-gallery-heading { align-items: start; flex-direction: column; gap: 18px; margin-bottom: 20px; }
     .project-gallery-tools { width: 100%; }
     .project-gallery-counter { margin-right: auto; }
+    .project-gallery-tools button { width: 44px; height: 44px; }
     .project-detail-pilot .project-gallery-slider { grid-template-columns: none; cursor: none; }
     .project-detail-pilot .project-gallery-slider .project-gallery-item,
     .project-detail-pilot .project-gallery-slider .project-gallery-item:nth-child(n) { flex-basis: 88%; cursor: inherit; }
     .project-detail-pilot .project-gallery-slider .project-gallery-item img,
     .project-detail-pilot .project-gallery-slider .project-gallery-item:nth-child(n) img { height: auto; aspect-ratio: 4 / 3; }
-    .project-gallery-footer { align-items: start; flex-direction: column; }
+    .project-gallery-footer { align-items: start; flex-direction: column; margin-top: 22px; }
+    .project-gallery-open { width: 100%; min-height: 50px; justify-content: space-between; }
+    .project-detail-pilot .project-story-details {
+        padding-top: 54px;
+        padding-bottom: 64px;
+    }
+    .project-detail-pilot .project-story-details-heading {
+        margin-bottom: 26px;
+    }
+    .project-contact-cta {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    .project-contact-cta h2 {
+        margin-bottom: 16px;
+        font-size: clamp(30px, 8.5vw, 36px);
+        line-height: 1.1;
+        letter-spacing: -1.3px;
+    }
+    .project-contact-cta p {
+        margin-bottom: 26px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
     .project-contact-actions { align-items: stretch; flex-direction: column; }
-    .project-contact-actions a { width: 100%; }
+    .project-contact-actions a { width: 100%; min-height: 50px; }
 }
 
 @media (max-width: 480px) {
