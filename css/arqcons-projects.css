@@ -454,6 +454,11 @@ body.project-lightbox-open { overflow: hidden; }
 .project-video-card:hover .project-video-action i { transform: scale(1.08); background: var(--brand-cyan); }
 .venture-video-section { padding: clamp(24px, 3vw, 44px) 0 clamp(18px, 2vw, 28px); }
 .venture-video-section .project-video-card { margin-top: 0; }
+.venture-video-heading { margin-bottom: 20px; }
+.venture-video-heading h2 { margin: 5px 0 0; color: #fff; font-size: clamp(26px, 3vw, 42px); }
+.venture-video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.venture-video-grid-single { margin-top: 20px; }
+.venture-video-grid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; object-fit: cover; }
 .venture-detail-pilot .venture-project-facts { gap: 16px; }
 .venture-detail-pilot .venture-project-facts .project-fact { padding-bottom: 14px; }
 .venture-amenities {
@@ -659,6 +664,7 @@ body.project-video-open { overflow: hidden; }
     .project-video-action i { width: 54px; height: 54px; }
     .project-video-frame { width: 100%; }
     .venture-amenities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .venture-video-grid { grid-template-columns: 1fr; }
     .project-detail-pilot .project-story-layout { grid-template-columns: 1fr; gap: 34px; }
     .project-detail-pilot .project-story-intro h4,
     .project-detail-pilot .project-gallery-heading h2,

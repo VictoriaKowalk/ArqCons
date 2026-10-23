@@ -28,10 +28,19 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         "proyecto-estancias-del-pilar.html": { title: "Estancias del Pilar", folder: "Casa Estancias del Pilar" },
         "proyecto-reserva-iii.html": { title: "La Reserva Cardales", folder: "Casa Reserva III" },
         "proyecto-reserva-ii.html": { title: "La Reserva Cardales", folder: "Casa Reserva II", image: "images/proyectos/Casa Reserva II/Sbarbatti Cardales 009.webp" },
+        "proyecto-ayres-plaza-moderna.html": { title: "Ayres Plaza", folder: "Casa Ayres Plaza Moderna 315" },
+        "proyecto-chateau-pilar-moderna.html": { title: "Chateau Pilar", folder: "Casa Chateau Pilar Moderna" },
+        "proyecto-greenville-moderna-330.html": { title: "Greenville Hudson", folder: "Casa Greenville Moderna 330" },
+        "proyecto-greenville-moderna-350.html": { title: "Greenville Hudson", folder: "Casa Greenville Moderna 350" },
+        "proyecto-greenville-francesa.html": { title: "Greenville Hudson", folder: "Casa Greenville Francesa" },
+        "proyecto-reserva-moderna-900.html": { title: "La Reserva Cardales", folder: "Casa Reserva Moderna 900" },
+        "proyecto-los-quinchos.html": { title: "Los Quinchos", folder: "Casa Los Quinchos" },
+        "proyecto-nordelta-castores.html": { title: "Nordelta Castores", folder: "Casa Nordelta Castores" },
         "emprendimiento-boulevard-del-sol.html": { title: "Boulevard del Sol", image: "images/Emprendimientos/Boulevard del Sol/b1.webp" },
         "emprendimiento-chateau-pilar.html": { title: "Chateau Pilar", image: "images/Emprendimientos/Chateau Pilar/ch1.webp" },
         "emprendimiento-habitat-residencias.html": { title: "Hábitat Residencias", image: "images/Emprendimientos/Habitat Residencias/h1.webp" },
-        "emprendimiento-palmas-del-sol.html": { title: "Palmas del Sol", image: "images/Emprendimientos/Palmas Del Sol/p1.webp" }
+        "emprendimiento-palmas-del-sol.html": { title: "Palmas del Sol", image: "images/Emprendimientos/Palmas Del Sol/p1.webp" },
+        "emprendimiento-liquidambar.html": { title: "Liquidámbar Dúplex", image: "images/Emprendimientos/Liquidambar Duplex/l11.webp" }
     };
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const headerTarget = document.querySelector("[data-arqcons-header]");
