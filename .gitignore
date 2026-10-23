@@ -1,1 +1,7 @@
 .claude/
+.agents/
+.tmp*/
+_originales-no-publicar/
+SEGUIMIENTO-MEJORAS.md
+images/**/*.txt
+images/**/*.pdf
