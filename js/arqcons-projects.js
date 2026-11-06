@@ -28,8 +28,9 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         "proyecto-estancias-del-pilar.html": { title: "Estancias del Pilar", folder: "Casa Estancias del Pilar" },
         "proyecto-reserva-iii.html": { title: "La Reserva Cardales", folder: "Casa Reserva III" },
         "proyecto-reserva-ii.html": { title: "La Reserva Cardales", folder: "Casa Reserva II", image: "images/proyectos/Casa Reserva II/Sbarbatti Cardales 009.webp" },
+        "proyecto-abril-club-de-campo.html": { title: "Abril Club de Campo", folder: "Casa Abril Club De Campo", image: "images/proyectos/Casa Abril Club De Campo/abp2.jpg" },
         "proyecto-ayres-plaza-moderna.html": { title: "Ayres Plaza", folder: "Casa Ayres Plaza Moderna 315" },
-        "proyecto-chateau-pilar-moderna.html": { title: "Chateau Pilar", folder: "Casa Chateau Pilar Moderna" },
+        "proyecto-chateau-pilar-moderna.html": { title: "Chateau Pilar", folder: "Casa Chateau Pilar Moderna", image: "images/proyectos/Casa Chateau Pilar Moderna/RENDER1.jpeg" },
         "proyecto-greenville-moderna-330.html": { title: "Greenville Hudson", folder: "Casa Greenville Moderna 330" },
         "proyecto-greenville-moderna-350.html": { title: "Greenville Hudson", folder: "Casa Greenville Moderna 350" },
         "proyecto-greenville-francesa.html": { title: "Greenville Hudson", folder: "Casa Greenville Francesa" },
@@ -112,12 +113,6 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         if (story) story.id = "project-story";
         if (!reducedMotion) {
             window.addEventListener("scroll", function () { media.style.setProperty("--hero-shift", `${Math.min(window.scrollY * .18, 110)}px`); }, { passive: true });
-            hero.addEventListener("pointermove", function (event) {
-                const bounds = hero.getBoundingClientRect();
-                media.style.setProperty("--hero-x", `${((event.clientX - bounds.left) / bounds.width - .5) * -18}px`);
-                media.style.setProperty("--hero-y", `${((event.clientY - bounds.top) / bounds.height - .5) * -12}px`);
-            });
-            hero.addEventListener("pointerleave", function () { media.style.setProperty("--hero-x", "0px"); media.style.setProperty("--hero-y", "0px"); });
         }
     }
 
@@ -146,7 +141,7 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
             const closeButton = videoModal.querySelector(".project-video-close");
             function openVideo(event) {
                 event.preventDefault();
-                frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+                frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&rel=0`;
                 videoModal.classList.add("is-open");
                 document.body.classList.add("project-video-open");
                 closeButton.focus();
@@ -170,13 +165,49 @@ const footer = `<footer class="home-footer-white bg-nero-grey pb-0 pt-4 md-pt-6 
         const root = gallery.dataset.galleryRoot || "images/proyectos";
         const count = Number(gallery.dataset.count || 0);
         const title = gallery.dataset.title || "Proyecto ArqCons";
+        if (folder === "Casa Reserva Moderna 900") {
+            const videoSection = document.createElement("section");
+            videoSection.className = "venture-video-section bg-dark-gray";
+            videoSection.innerHTML = '<div class="container"><div class="venture-video-heading"><span class="section-label text-base-color fw-600 text-uppercase">Video</span><h2>Recorré La Reserva Cardales.</h2></div><div class="venture-video-grid"><video controls preload="metadata"><source src="images/proyectos/Casa Reserva Moderna 900/IMG_6406.MOV" type="video/quicktime">Tu navegador no puede reproducir este video.</video></div></div>';
+            gallery.closest(".project-gallery-section").before(videoSection);
+        }
         const files = (gallery.dataset.files || "").split("|").filter(Boolean);
+        if (folder === "Casa Nordelta Castores") {
+            files.push(
+                "WhatsApp Image 2026-10-28 at 9.03.16 PM (1).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.16 PM (2).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.16 PM.jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.17 PM (1).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.17 PM (2).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.17 PM (3).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.17 PM (4).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.17 PM.jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.18 PM (1).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.18 PM (2).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.18 PM (3).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.18 PM (4).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.18 PM.jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.19 PM (1).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.19 PM (2).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.19 PM (3).jpeg",
+                "WhatsApp Image 2026-10-28 at 9.03.19 PM.jpeg"
+            );
+        }
         images = files.length
-            ? files.map(function (file) { return `${root}/${folder}/${file}`; })
+            ? files.map(function (file) {
+                if (folder === "Casa Reserva Moderna 900" && file === "7.webp") file = "7-sin-dedo.png";
+                return `${root}/${folder}/${file}`;
+            })
             : Array.from({ length: count }, function (_, index) { return `${root}/${folder}/${index + 1}.webp`; });
+        const imageCount = images.length;
         gallery.innerHTML = images.map(function (source, index) {
             return `<a href="${source}" class="project-gallery-item" data-project-image="${index}" aria-label="Abrir imagen ${index + 1} de ${count}"><img src="${source}" alt="${title} — imagen ${index + 1}" loading="${index > 2 ? "lazy" : "eager"}" decoding="async" draggable="false"><span class="project-image-number">${String(index + 1).padStart(2, "0")} / ${String(count).padStart(2, "0")}</span></a>`;
         }).join("");
+        gallery.querySelectorAll(".project-gallery-item").forEach(function (item, index) {
+            item.setAttribute("aria-label", `Abrir imagen ${index + 1} de ${imageCount}`);
+            const number = item.querySelector(".project-image-number");
+            if (number) number.textContent = `${String(index + 1).padStart(2, "0")} / ${String(imageCount).padStart(2, "0")}`;
+        });
 
         if (gallery.dataset.galleryMode === "slider") {
             const section = gallery.closest(".project-gallery-section");
