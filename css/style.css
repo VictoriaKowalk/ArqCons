@@ -11119,7 +11119,7 @@ blockquote footer {
 }
 /* Contact form */
 .select-style select {
-  background-image: url("../images/contact-form-down-arrow.jpg");
+  background-image: url("../images/contact-form-down-arrow.webp");
   background-repeat: no-repeat;
   background-position: top 25px right 30px;
   cursor: pointer;
